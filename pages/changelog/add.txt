@@ -1,0 +1,4 @@
+- New commands: The friendly bot can now perform more actions.
+- Embed cards: Some responses got a sweet visual upgrade with embedded content.
+- More jokes: Added even more corny jokes to reduce redundancy.
+- Bigger menu: Now the menu has more food items and a selection of drinks.

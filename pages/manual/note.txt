@@ -1,0 +1,7 @@
+- This bot is case insensitive and hence you may use lowercase, uppercase or a mix of both to address statements to ff. For example both 'HEY FF' and 'hey ff' are valid.
+
+- This bot ignores all punctuation and will treat them as null characters. For example both 'hey, ff!' and 'ff...?' are valid.
+
+- This bot responds to the same channel where he was instructed. Eventually new commands will be added where he may reply to certain commands in DMs.
+
+- This bot is purely text based (as of now) and will not affect your voice channels, nor will he attempt any admin tasks.

@@ -1,0 +1,10 @@
+- beer
+- boba / bubble tea
+- cocktail
+- coffee
+- juice
+- milk
+- soda
+- tea
+- water
+- wine

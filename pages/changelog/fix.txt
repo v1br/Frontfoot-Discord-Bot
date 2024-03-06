@@ -1,0 +1,3 @@
+- Responses: Some responses were made shorter and various typos were resolved.
+- Unexpected calls: Now ff responds to unexpected calls by narration instead of chatting.
+- Devmode: Now ff will enter sleep mode whenever he is being maintained by the developer.
