@@ -41,9 +41,9 @@
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px">》Screenshots
 
-<div align="center">
-    <img width="480px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_1.jpg" /><br /><br />
-    <img width="480px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_2.jpg" /><br /><br />
+<div>
+    <img width="320px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_1.jpg" /><br /><br />
+    <img width="320px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_2.jpg" /><br /><br />
 </div>
 
 
