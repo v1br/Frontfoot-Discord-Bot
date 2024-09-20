@@ -19,17 +19,12 @@
 
 <p align="center">
     Frontfoot is a friendly Discord bot that brings more fun and personality to your server. It's like having your very own butler, chef, and pal all in one! 
-    The bot responds to simple commands to cook dishes, serve drinks, tell corny jokes, and much more.
-</p>
-
-<p align="center">
-    Designed as a fun personal project, Frontfoot stays clear of administrative tasks and uses keywords like <strong>'ff'</strong> or <strong>'hey ff'</strong> to respond, ensuring it doesn't interfere with any other popular bots in your server.
+    The bot responds to simple commands to cook dishes, serve drinks, tell corny jokes, and much more. Designed as a fun personal project, Frontfoot stays clear of administrative tasks and uses keywords like <strong>'ff'</strong> or <strong>'hey ff'</strong> to respond, ensuring it doesn't interfere with any other popular bots in your server.
 </p>
 
 <p align="center">
     If you've enjoyed having Frontfoot in your server, don't forget to give this repository a star! ⭐
 </p>
-
 
 </div>
 
@@ -46,9 +41,9 @@
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px">》Screenshots
 
-<div align="center">
-    <img src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_1.jpg" />
-    <img src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_2.jpg" />
+<div>
+    <img width="320px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_1.jpg" /><br /><br />
+    <img width="320px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_2.jpg" /><br /><br />
 </div>
 
 
@@ -79,7 +74,7 @@ git push origin new_feature_name
 ## <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》Queries
 
 > I added Frontfoot to my Discord server but he is offline. What to do?
--The bot is likely down for maintenance, give it some time, if the issue persists, contact me on Discord.
+-The bot is likely down for maintenance, give it some time, if the issue persists, contact me on Discord @thisguyispeculiar.
 
 
 <div align="center">
