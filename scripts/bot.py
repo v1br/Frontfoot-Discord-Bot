@@ -17,7 +17,7 @@ from scripts import server
 # global variables
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
-devmode = os.environ['MAINTENANCE']
+devmode = False
 
 # on_ready event
 @client.event
