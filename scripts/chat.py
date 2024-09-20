@@ -28,7 +28,7 @@ def parse(message):
   content = message.content.lower()
   content = content.strip()
 
-  punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+  punc = '''!()-[]{};:'"\\,<>./?@#$%^&*_~'''
 
   for x in content:
     if x in punc:

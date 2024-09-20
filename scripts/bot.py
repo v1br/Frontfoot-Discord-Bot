@@ -1,3 +1,9 @@
+# Environment Variables
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 # Standard library imports
 import discord
 import os
