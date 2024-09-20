@@ -2,7 +2,7 @@
 import random
 import discord
 import datetime
-import io
+import re
 from discord.ext import commands
 from PIL import Image, ImageSequence
 
@@ -151,61 +151,45 @@ def fetch(command):
 
   # roll
   elif command.startswith("roll"):
-    score = 0
-    action = "Nothing happened..."
     card = responses.ROLL()
+    ledger = ""
+    score = 0
 
     if command == "roll":
       embed = discord.Embed(
-        title = 'Available dice rolls',
-        description = card['desc'],
         color = discord.Color.purple(),
       )
-
-      embed.add_field(name = 'Roll commands', value = card['list'], inline = True)
+      embed.add_field(name = 'Specifying roll attributes', value = card['desc'], inline = True)
     
-
     else:
-      if command == "roll d2":
-        score = random.randint(1,2)
-        action = "A coin was flipped to reveal a number."
-  
-      elif command == "roll d4":
-        score = random.randint(1,4)
-        action = "A tetrahedron was rolled to reveal a number."
+      option = command.split(" ")[1]
+      match = re.match(r"([0-9]+)d([0-9]+)((\+[0-9]+)*)", option)
 
-      elif command == "roll d6":
-        score = random.randint(1,6)
-        action = "A regular six-sided die was rolled to reveal a number."
+      if match:
+          modif = 0
+          count = int(match.group(1))
+          sides = int(match.group(2))
 
-      elif command == "roll d8":
-        score = random.randint(1,8)
-        action = "An octahedron was rolled to reveal a number."
+          for i in range(count): 
+            value = random.randint(1,sides)
+            ledger = ledger + " + " + str(value)
+            score = score + value
 
-      elif command == "roll d10":
-        score = random.randint(1,10)
-        action = "An decahedron was rolled to reveal a number."
+          if (match.group(3)[1::]):
+            modif = int(match.group(3)[1::])
+            score = score + modif
+            ledger = ledger + " + " + str(modif)
 
-      elif command == "roll d12":
-        score = random.randint(1,12)
-        action = "An dodecahedron was rolled to reveal a number."
+          if (count > 1 or modif != 0):
+            ledger = ledger + " = "
+            ledger = ledger[2::]
+          else:
+            ledger = ""
 
-      elif command == "roll d20":
-        score = random.randint(1,20)
-        action = "An icosahedron was rolled to reveal a number."
-
-      elif command == "roll d100":
-        score = random.randint(1,100)
-        action = "Two decahedrons were rolled to reveal a number."
-
-  
       embed = discord.Embed(
-        title = 'Dice Roll',
-        description = action,
+        description = "roll: " + ledger + str(score),
         color = discord.Color.purple()
       )
-  
-      embed.add_field(name = 'Result', value = score, inline = True)
 
   return embed
 

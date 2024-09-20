@@ -1,8 +1,0 @@
-roll d2
-roll d4
-roll d6
-roll d8
-roll d10
-roll d12
-roll d20
-roll d100

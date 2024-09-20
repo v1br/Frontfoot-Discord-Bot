@@ -38,6 +38,8 @@ async def on_message(message):
 
   # read input
   command = chat.parse(message)
+  keyword = command.split(" ")[0]
+
   if command == "NULL":
     return
   else:
@@ -59,13 +61,13 @@ async def on_message(message):
 
   # show cards
   
-  if command in ["help", "changelog", "menu", "roll", "roll d2", "roll d4", "roll d6", "roll d8", "roll d10", "roll d12", "roll d20", "roll d100", "send", "status"]:
+  if keyword in ["help", "changelog", "menu", "roll", "status"]:
     embed = chat.fetch(command)
     await message.channel.send(embed = embed)
     print(f"\nBot: ff, Channel: {channel.name}\n-> Card:{embed.title}")
 
   # show actions
-  elif command in ["dance", "horn", "fishpole", "hotsauce", "shuriken"]:
+  elif keyword in ["dance", "horn", "fishpole", "hotsauce", "shuriken"]:
     await message.channel.send(file = chat.perform(command))
     print(f"\nBot: ff, Channel: {channel.name}\n-> Gif:{command}")
 

@@ -1,1 +1,3 @@
-Here's a handy little list of all the dice rolls ff can make for you.
+To make a dice roll with ff, it should follow the format <count>d<sides>+<mod>, telling ff exactly how many dice to roll, the number of sides each die has and any additional modifiers that need to be added to the roll.
+
+For example: ff roll 3d8+2 will roll three d8s and then add +2 as modifier.
