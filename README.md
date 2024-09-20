@@ -74,7 +74,7 @@ git push origin new_feature_name
 ## <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》Queries
 
 > I added Frontfoot to my Discord server but he is offline. What to do?
--The bot is likely down for maintenance, give it some time, if the issue persists, contact me on Discord.
+-The bot is likely down for maintenance, give it some time, if the issue persists, contact me on Discord @thisguyispeculiar.
 
 
 <div align="center">
