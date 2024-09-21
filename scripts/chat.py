@@ -28,7 +28,7 @@ def parse(message):
   content = message.content.lower()
   content = content.strip()
 
-  punc = '''!()-[]{};:'"\\,<>./?@#$%^&*_~'''
+  punc = '''!()[]{};:'"\\,<>./?@#$%^&*_~'''
 
   for x in content:
     if x in punc:
@@ -163,7 +163,7 @@ def fetch(command):
     
     else:
       option = command.split(" ")[1]
-      match = re.match(r"([0-9]+)d([0-9]+)((\+[0-9]+)*)", option)
+      match = re.match(r"([0-9]+)d([0-9]+)(((\+|-)[0-9]+)?)", option)
 
       if match:
           modif = 0
@@ -175,10 +175,16 @@ def fetch(command):
             ledger = ledger + " + " + str(value)
             score = score + value
 
-          if (match.group(3)[1::]):
+          if (match.group(3)):
+            sign = match.group(3)[0]
             modif = int(match.group(3)[1::])
-            score = score + modif
-            ledger = ledger + " + " + str(modif)
+
+            if (sign == '+'):
+              score = score + modif
+              ledger = ledger + " + " + str(modif)
+            elif (sign == '-'):
+              score = score - modif
+              ledger = ledger + " - " + str(modif)
 
           if (count > 1 or modif != 0):
             ledger = ledger + " = "
