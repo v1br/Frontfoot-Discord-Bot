@@ -65,11 +65,6 @@ async def on_message(message):
     await message.channel.send(embed = embed)
     print(f"\nBot: ff, Channel: {channel.name}\n-> Card:{embed.title}")
 
-  # show actions
-  elif keyword in ["dance", "horn", "fishpole", "hotsauce", "shuriken"]:
-    await message.channel.send(file = chat.perform(command))
-    print(f"\nBot: ff, Channel: {channel.name}\n-> Gif:{command}")
-
   # show messages
   else: 
     reply = chat.run(command, author)

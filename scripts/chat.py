@@ -3,8 +3,6 @@ import random
 import discord
 import datetime
 import re
-from discord.ext import commands
-from PIL import Image, ImageSequence
 
 # Local application imports
 from scripts import exceptions
@@ -59,36 +57,6 @@ def parse(message):
 
   else:
     return "NULL"
-
-
-# Perform actions if needed
-def perform(command):
-  
-  gif_file = discord.File('./media/fishpole.gif', filename='penguin.gif')
-  
-  # dance
-  if command == "dance":
-    gif_path = './media/dance.gif'
-
-  # fishpole
-  elif command == "fishpole":
-    gif_path = './media/fishpole.gif'
-
-  # horn
-  elif command == "horn":
-    gif_path = './media/horn.gif'
-  
-  # hotsauce
-  elif command == "hotsauce":
-    gif_path = './media/hotsauce.gif'
-
-  # shuriken
-  elif command == "shuriken":
-    gif_path = './media/shuriken.gif'
-  
-  gif_file = discord.File(gif_path, filename='penguin.gif')
-  return gif_file
-
 
 # Fetch cards if needed
 def fetch(command):
@@ -164,6 +132,7 @@ def fetch(command):
     else:
       option = command.split(" ")[1]
       match = re.match(r"([0-9]+)d([0-9]+)(((\+|-)[0-9]+)?)", option)
+      embed = discord.Embed()
 
       if match:
           modif = 0
@@ -192,10 +161,16 @@ def fetch(command):
           else:
             ledger = ""
 
-      embed = discord.Embed(
-        description = "roll: " + ledger + str(score),
-        color = discord.Color.purple()
-      )
+          embed = discord.Embed(
+            description = "roll: " + ledger + str(score),
+            color = discord.Color.purple()
+          )
+      
+      else:
+          embed = discord.Embed(
+          color = discord.Color.purple()
+          )
+          embed.add_field(name = 'Specifying roll attributes', value = card['desc'], inline = True)
 
   # 8ball
   elif command.startswith("8ball"):
@@ -351,14 +326,6 @@ def run(command, user):
   elif command == "love" or command == "i love you":
     reply += random.choice(responses.LOVE())
 
-  # magic
-  elif command == "magic" or command == "magic trick" or command == "abracadabra":
-    reply += random.choice(responses.MAGIC())
-  
-  # scream
-  elif command == "scream":
-    reply += random.choice(responses.SCREAM())
-
   # serve
   elif command.startswith("serve"):
 
@@ -408,10 +375,6 @@ def run(command, user):
   
     else:
       return exceptions.PROMPT["missing_recipe"]
-
-  # sing
-  elif command == "sing" or command == "sing song" or command == "sing a song":
-    reply += random.choice(responses.SING())
 
   # confusion
   else:

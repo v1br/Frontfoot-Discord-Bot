@@ -1,1 +1,1 @@
-Frontfoot, also known as ff, is a bot who responds to statements that begin with the friendly prefixes 'ff' or 'hey ff' followed by various keywords. You can also incorporate 'please' in any statements addressed to him. He welcomes all interactions with open virtual arms!
+Frontfoot, also known as ff, is a bot who responds to statements that begin with the friendly prefixes 'ff' or 'hey ff' followed by various keywords. You can also incorporate 'please' in any statements addressed to him. :>
