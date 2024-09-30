@@ -4,6 +4,7 @@ import os
 load_dotenv()
 
 # Standard library imports
+import datetime
 import discord
 import os
 
@@ -21,7 +22,11 @@ devmode = False
 @client.event
 async def on_ready():
   print(f'{client.user} is now online!')
-  chat.begin(devmode)
+  chat.begin({
+    'devmode' : devmode,
+    'launch_time' : datetime.datetime.now(),
+    'client' : client
+  })
 
 # on_message event
 @client.event

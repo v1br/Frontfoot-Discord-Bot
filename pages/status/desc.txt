@@ -1,1 +1,0 @@
-The implementation of this feature is currently in progress. It is a front-end status report for debugging and troubleshooting purposes. It is also meant as a way for users to keep tabs on the bot when it is in developer mode.

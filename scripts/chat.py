@@ -9,17 +9,20 @@ from scripts import exceptions
 from scripts import responses
 
 # Global variables
+devmode = "???"
+client = "???"
 launch_time = "???"
-sleeping = "???"
 
 # Init bot variables
-def begin(devmode):
-  global sleeping
+def begin(session):
+  global devmode
+  global client
   global launch_time
 
-  sleeping = devmode
-  launch_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-  print("Launched on--> " + launch_time) 
+  devmode = session['devmode']
+  launch_time = session['launch_time']
+  client = session['client']
+  print("Launched on--> " + str(launch_time)) 
 
 # Parse all statements
 def parse(message):
@@ -105,17 +108,19 @@ def fetch(command):
     embed.add_field(name = 'List of available dishes (command: ff cook)', value = card['food'], inline = False)
     embed.add_field(name = 'List of available drinks (command: ff serve)', value = card['drink'], inline = False)
 
-  # status
   elif command == "status":
-    card = responses.STATUS()
-    embed = discord.Embed(
-      title = 'Status Report',
-      description = card['desc'],
-      color = discord.Color.green()
-    )
+      embed = discord.Embed(
+          color=discord.Color.green()
+      )
 
-    embed.add_field(name = 'Developer Mode: ', value = sleeping, inline = False)
-    embed.add_field(name = 'Last launched on: ', value = launch_time, inline = False)
+      server_count = len(client.guilds)
+      latency = round(client.latency * 1000)
+
+      embed.add_field(name="🔧 Devmode", value="Enabled" if devmode else "Disabled", inline=False)
+      embed.add_field(name="🚀 Launch", value=launch_time.strftime("%Y-%m-%d %H:%M:%S"), inline=False)
+      embed.add_field(name="⏳ Uptime", value=str(datetime.datetime.now() - launch_time).split('.')[0], inline=False)
+      embed.add_field(name="📡 Latency", value=f"{latency} ms", inline=False)
+      embed.add_field(name="🌐 Servers", value=f"{server_count} live servers", inline=False)
 
   # roll
   elif command.startswith("roll"):

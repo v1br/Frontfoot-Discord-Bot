@@ -131,22 +131,6 @@ def BALL():
   return card
 
 
-def STATUS():
-  desc_path = './pages/status/desc.txt'
-
-  card = {
-    'desc' : "???",
-  }
-
-  try:
-    with open(desc_path, 'r') as file:
-      card['desc'] = file.read()
-
-  except FileNotFoundError as e:
-    print("--- Missing status ---")
-  
-  return card
-
 # ----- Chat Based Commands -----
 
 
