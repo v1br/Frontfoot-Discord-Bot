@@ -1,7 +1,6 @@
 # Environment Variables
 from dotenv import load_dotenv
 import os
-
 load_dotenv()
 
 # Standard library imports
@@ -11,7 +10,6 @@ import os
 # Local application imports
 from scripts import chat
 from scripts import exceptions
-from scripts import responses
 from scripts import server
 
 # global variables
