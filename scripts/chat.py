@@ -87,8 +87,6 @@ def fetch(command):
   elif command == "changelog":
     card = responses.CHANGELOG()
     embed = discord.Embed(
-      title = 'Changelog',
-      description = card['desc'],
       color = discord.Color.green()
     )
   

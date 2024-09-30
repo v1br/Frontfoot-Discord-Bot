@@ -4,22 +4,17 @@ from scripts import exceptions
 # ----- Card Based Commands -----
 
 def CHANGELOG():
-  desc_path = './pages/changelog/desc.txt'
   date_path = './pages/changelog/date.txt'
   add_path = './pages/changelog/add.txt'
   fix_path = './pages/changelog/fix.txt'
 
   card = {
-    'desc' : "???",
     'date' : "???",
     'add' : "???",
     'fix' : "???",
   }
 
   try:
-    with open(desc_path, 'r') as file:
-      card['desc'] = file.read()
-  
     with open(date_path, 'r') as file:
       card['date'] = file.read()
   
