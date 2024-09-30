@@ -95,11 +95,27 @@ def MENU():
 
 def ROLL():
   desc_path = './pages/roll/desc.txt'
-  list_path = './pages/roll/list.txt'
 
   card = {
     'desc' : "???",
-    'list' : "???",
+  }
+
+  try:
+    with open(desc_path, 'r') as file:
+      card['desc'] = file.read()
+
+  except FileNotFoundError as e:
+    print("--- Missing rolls ---")
+
+  return card
+
+def BALL():
+  desc_path = './pages/ball/desc.txt'
+  list_path = './pages/ball/list.txt'
+
+  card = {
+    'desc' : "???",
+    'list' : []
   }
 
   try:
@@ -107,12 +123,13 @@ def ROLL():
       card['desc'] = file.read()
 
     with open(list_path, 'r') as file:
-      card['list'] = file.read()
+      card['list'] = [item for item in file.read().split("\n") if item]
 
   except FileNotFoundError as e:
-    print("--- Missing rolls ---")
+    print("--- Missing 8ball ---")
 
   return card
+
 
 def STATUS():
   desc_path = './pages/status/desc.txt'

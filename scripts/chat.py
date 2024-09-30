@@ -157,7 +157,7 @@ def fetch(command):
 
     if command == "roll":
       embed = discord.Embed(
-        color = discord.Color.purple(),
+        color = discord.Color.purple()
       )
       embed.add_field(name = 'Specifying roll attributes', value = card['desc'], inline = True)
     
@@ -194,6 +194,22 @@ def fetch(command):
 
       embed = discord.Embed(
         description = "roll: " + ledger + str(score),
+        color = discord.Color.purple()
+      )
+
+  # 8ball
+  elif command.startswith("8ball"):
+    card = responses.BALL()
+
+    if command == "8ball":
+      embed = discord.Embed(
+        color = discord.Color.purple()
+      )
+      embed.add_field(name = 'Asking questions with 8ball', value = card['desc'], inline = True)
+    
+    else:
+      embed = discord.Embed(
+        description = "8ball: " + card['list'][random.randint(1,20)],
         color = discord.Color.purple()
       )
 
