@@ -183,9 +183,18 @@ def fetch(command):
       embed.add_field(name = 'Asking questions with 8ball', value = card['desc'], inline = True)
     
     else:
+
+      num = random.randint(1,20)
+      if num <= 10:
+        clr = discord.Color.green()
+      elif num <= 15:
+        clr = discord.Color.yellow()
+      else:
+        clr = discord.Color.red()
+
       embed = discord.Embed(
-        description = "8ball: " + card['list'][random.randint(1,20)],
-        color = discord.Color.purple()
+        description = "8ball: " + card['list'][num],
+        color = clr
       )
 
   return embed
