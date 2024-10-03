@@ -16,7 +16,8 @@ from scripts import server
 # global variables
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
-devmode = False
+developer = os.environ['DEVELOPER']
+devmode = os.environ['DEVMODE']
 
 # on_ready event
 @client.event
@@ -49,18 +50,14 @@ async def on_message(message):
     print(f"\nUser: {author}, Channel: {channel}\n-> {command}")
 
   # check status
-  if devmode and command in ["status"]: #override
-    pass
-  
-  elif devmode and isinstance(channel, discord.DMChannel):
-    reply = exceptions.PROMPT["maintenance"]
-    await message.channel.send(reply)
-    return
-
-  elif devmode and channel.name != "workshop":
-    reply = exceptions.PROMPT["maintenance"]
-    await message.channel.send(reply)
-    return
+  if devmode:
+    print(author == developer)
+    if command in ["status", "changelog"] or author.name == developer: 
+      pass
+    else:
+      reply = exceptions.PROMPT["maintenance"]
+      await message.channel.send(reply)
+      return
 
   # show cards
   if keyword in ["help", "changelog", "menu", "roll", "status", "8ball"]:
