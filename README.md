@@ -1,29 +1,13 @@
 <div align="center">
-
   <h1 align="center">Frontfoot-Discord-Bot</h1>
-
 <p align="center">
-    <a href="https://discord.com/oauth2/authorize?client_id=1175204727500312616" style="text-decoration: none;">
-        <button style="
-            background-color: #7289DA; 
-            color: white; 
-            padding: 10px 20px; 
-            border: none; 
-            border-radius: 5px; 
-            font-size: 16px; 
-            cursor: pointer;">
-            Invite Frontfoot to your server 🐧
-        </button>
-    </a>
+
+[<img src="images/button.png" height="40"/>](https://discord.com/oauth2/authorize?client_id=1175204727500312616)
+
 </p>
 
 <p align="center">
-    Frontfoot is a friendly Discord bot that brings more fun and personality to your server. It's like having your very own butler, chef, and pal all in one! 
-    The bot responds to simple commands to cook dishes, serve drinks, tell corny jokes, and much more. Designed as a fun personal project, Frontfoot stays clear of administrative tasks and uses keywords like <strong>'ff'</strong> or <strong>'hey ff'</strong> to respond, ensuring it doesn't interfere with any other popular bots in your server.
-</p>
-
-<p align="center">
-    If you've enjoyed having Frontfoot in your server, don't forget to give this repository a star! ⭐
+    Frontfoot is a fun bot for your personal Discord servers with chat commands, dice rolling, magic 8 ball, interactive menu, minigames and more. This bot is in active development and hosted via a free service so be on the lookout for new features. If you enjoy having Frontfoot in your server, don't forget to give this repository a star! ⭐
 </p>
 
 </div>
@@ -32,22 +16,20 @@
 <!-- ABOUT THE PROJECT -->
 
 ## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px">》Features
-- [x] Active maintenance
-- [x] Text-based commands
+- [x] Various text-based commands
 - [x] Roll a dice for bets & games
+- [x] Consult the magic 8-ball
+- [x] Enjoy a round of blackjack
+- [x] Try your hands at RPS 
 - [x] Responds to 'i love you'
 
 
-
-## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px">》Screenshots
-
+## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Screenshots
 <div>
-    <img width="320px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_1.jpg" /><br /><br />
-    <img width="320px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/screenshots/ss_2.jpg" /><br /><br />
+    <img src="images/screenshot.png" /><br /><br />
 </div>
 
-
-## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Contribution
+## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px">》Contribution
 
 
 Fork and clone the repository.
@@ -71,13 +53,12 @@ git push origin new_feature_name
 ```
 
 
-## <img src="https://cdn.discordapp.com/emojis/1015745034076819516.png" width="25px" height="25px">》Queries
+## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Queries
 
 > I added Frontfoot to my Discord server but he is offline. What to do?
 -The bot is likely down for maintenance, give it some time, if the issue persists, contact me on Discord @thisguyispeculiar.
 
 
 <div align="center">
-    <img width="60px" src="https://github.com/VibhorAgrawal2003/Frontfoot-Discord-Bot/blob/main/media/dance.gif" />
+    <img width="200px" src="images/tmon.gif" />
 </div>
-
