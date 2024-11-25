@@ -57,8 +57,3 @@ git push origin new_feature_name
 
 > I added Frontfoot to my Discord server but he is offline. What to do?
 -The bot is likely down for maintenance, give it some time, if the issue persists, contact me on Discord @thisguyispeculiar.
-
-
-<div align="center">
-    <img width="200px" src="images/tmon.gif" />
-</div>
