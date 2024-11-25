@@ -3,95 +3,40 @@ What did one hat say to another? || Stay here, I'm going on ahead! ||
 Why did the scarecrow win an award? || Because he was outstanding in his field! ||
 What's orange and sounds like a parrot? || A carrot! ||
 Why did the bicycle fall over? || It was two-tired! ||
-What do you call fake spaghetti? || An impasta! ||
 Why did the tomato turn red? || Because it saw the salad dressing! ||
-What do you call a fish wearing a crown? || A kingfish! ||
 Why did the golfer bring two pairs of pants? || In case he got a hole in one! ||
-What do you get when you cross a snowman and a vampire? || Frostbite! ||
-Why did the chicken go to the seance? || To talk to the other side! ||
+Why did the chicken go to the seer? || To talk to the other side! ||
 What do you call a factory that makes good products? || A satisfactory! ||
 Why don't skeletons fight each other? || They don't have the guts! ||
-What did the grape do when it got stepped on? || Nothing, but it let out a little wine! ||
-Why did the math book look sad? || Because it had too many problems! ||
-What's brown and sticky? || A stick! ||
 How do you organize a space party? || You planet! ||
 What do you call a cheese that isn't yours? || Nacho cheese! ||
-Why couldn't the bicycle stand up by itself? || It was two-tired! ||
-What's a vampire's favorite fruit? || A blood orange! ||
-Why did the cookie go to the doctor? || It was feeling crumbly! ||
-What do you call a pile of cats? || A meowtain! ||
-Why did the computer keep its drink on the windowsill? || It wanted a byte! ||
-What's a skeleton's least favorite room in the house? || The living room! ||
-Why did the banana go to the doctor? || It wasn't peeling well! ||
 How do you catch a squirrel? || Climb a tree and act like a nut! ||
 What's the difference between a snowman and a snowwoman? || Snowballs! ||
 Why did the music teacher go to jail? || Because she got caught with a minor! ||
-What do you call a fish with no eyes? || Fsh! ||
-What's the best way to organize a space party? || You planet! ||
 What do you call a fish with a tie? || SoFISHticated! ||
-Why did the banana go to the doctor? || It wasn't peeling well! ||
-How do you make a lemon drop? || Just let it fall! ||
-Why did the scarecrow become a successful politician? || Because he was outstanding in his field! ||
-What do kids play when their mom is using the phone? || Bored games. ||
 What do you call an ant who fights crime? || A vigilANTe! ||
-What’s the smartest insect? || A spelling bee! ||
 What does a storm cloud wear under his raincoat? || Thunderwear. ||
-What is fast, loud and crunchy? || A rocket chip. ||
-How does the ocean say hi? || It waves! ||
 What do you call a couple of chimpanzees sharing an Amazon account? || PRIME-mates. ||
 Why did the teddy bear say no to dessert? || Because she was stuffed. ||
-Why did the soccer player take so long to eat dinner? || Because he thought he couldn’t use his hands. ||
-Name the kind of tree you can hold in your hand? || A palm tree! ||
 What do birds give out on Halloween? || Tweets. ||
-What has ears but cannot hear? || A cornfield. ||
-What’s a cat’s favorite dessert? || A bowl full of mice-cream. ||
-Where did the music teacher leave her keys? || In the piano! ||
-What did the policeman say to his hungry stomach? || “Freeze. You’re under a vest.” ||
 What did the left eye say to the right eye? || Between us, something smells! ||
 What do you call a guy who’s really loud? || Mike. ||
-Why do birds fly south in the winter? || It’s faster than walking! ||
-What did the lava say to his girlfriend? || “I lava you!” ||
 Why did the student eat his homework? || Because the teacher told him it was a piece of cake. ||
 What did Yoda say when he saw himself in 4k? || HDMI. ||
-Which superhero hits home runs? || Batman! ||
 What’s Thanos’ favorite app on his phone? || Snapchat. ||
-Sandy’s mum has four kids; North, West, East. What is the name of the fourth child? || Sandy, obviously! ||
-What is a room with no walls? || A mushroom. ||
-Why did the blue jay get in trouble at school? || For tweeting on a test! ||
-What social events do spiders love to attend? || Webbings. ||
-What did one pickle say to the other? || Dill with it. ||
-What is brown, hairy and wears sunglasses? || A coconut on vacation. ||
-Why is a football stadium always cold? || It has lots of fans! ||
-What did one math book say to the other? || “I’ve got so many problems.” ||
-What did the Dalmatian say after lunch? || That hit the spot! ||
 What do you call two bananas on the floor? || Slippers. ||
 Why did the chicken cross the playground? || To get to the other slide. ||
-Why do ducks have feathers on their tails? || To cover their butt quacks. ||
-How does a vampire start a letter? || “Tomb it may concern…” ||
 A plane crashed in the jungle and every single person died. Who survived? || Married couples. ||
-What kind of math do birds love? || Owl-gebra! ||
 Why can’t you ever tell a joke around glass? || It could crack up. ||
 What do you call a Star Wars droid that takes the long way around? || R2 detour. ||
 How do you stop an astronaut’s baby from crying? || You rocket. ||
-Why did the scarecrow win a Nobel prize? || Because she was outstanding in her field. ||
 How do you know when a bike is thinking? || You can see their wheels turning. ||
-Why was 6 afraid of 7? || Because 7,8,9. ||
-What goes up and down but doesn’t move? || The staircase. ||
-What kind of shoes do frogs love? || Open-toad! ||
-How did the baby tell his mom he had a wet diaper? || He sent her a pee-mail. ||
-What is a witch’s favorite subject in school? || Spelling. ||
-What’s brown and sticky? || A stick. ||
-Why do ducks always pay with cash? || Because they always have bills! ||
-How did Benjamin Franklin feel holding his kite when he discovered electricity? || Shocked! ||
+Why was 5 afraid of 7? || Because 7 was a registered 6 offender. ||
 When does a joke become a “dad” joke? || When the punchline is a parent. ||
 How much did the man sell his dead batteries for? || Nothing, they were free of charge! ||
-Where do most horses live? || In neighhh-borhoods! ||
-Why did the Daddy Rabbit go to the barber? || He had a lot of little hares. ||
-How do you make a lemon drop? || Let it fall from the tree. ||
-Why can’t you ever trust atoms? || Because they make up everything. ||
-Which planet loves to sing? || Nep-tune! ||
-What’s a private investigator’s favorite shoe? || Sneak-ers. ||
 What did the limestone say to the geologist? || Don’t take me for granite! ||
+
+// left to check
 If an electric train is traveling south at 10 miles per hour and the wind is blowing North at 10 miles per hour, which way does the smoke blow? || Fooled you! Electric trains don’t blow smoke. ||
 Why are basketball courts always wet? || Because the players dribble. ||
 How do billboards talk? || Sign language. ||

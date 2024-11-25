@@ -311,6 +311,10 @@ def run(command, user):
   elif command == "hi" or command == "hello":
     reply = random.choice(responses.GREET())
 
+  # hru
+  elif command == "hru" or command == "how are you":
+    reply = random.choice(responses.HRU())
+
   # insult
   elif command.startswith("insult"):
 

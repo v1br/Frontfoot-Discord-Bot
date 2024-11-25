@@ -168,17 +168,6 @@ def ORDER(food):
     return [ exceptions.PROMPT["unable"] ]
 
 
-
-def SCREAM():
-  try:
-    msg_path = './messages/scream.txt'
-    with open(msg_path, 'r') as file:
-      return file.read().split("\n")
-
-  except FileNotFoundError as e:
-    return [ exceptions.PROMPT["unable"] ]
-
-
 def JOKE():
   try:
     msg_path = './messages/joke.txt'
@@ -219,31 +208,11 @@ def CONFUSE():
     return [ exceptions.PROMPT["unable"] ]
 
 
-def DANCE():
-  try:
-    msg_path = './messages/dance.txt'
-    with open(msg_path, 'r') as file:
-      return file.read().split("\n")
-
-  except FileNotFoundError as e:
-    return [ exceptions.PROMPT["unable"] ]
-
-
-
 def EXPLODE(victim):
   try:
     msg_path = './messages/explode.txt'
     with open(msg_path, "r") as file:
       return file.read().format(victim = victim).split("\n")
-
-  except FileNotFoundError as e:
-    return [ exceptions.PROMPT["unable"] ]
-
-def MAGIC():
-  try:
-    msg_path = './messages/magic.txt'
-    with open(msg_path, "r") as file:
-      return file.read().split("\n")
 
   except FileNotFoundError as e:
     return [ exceptions.PROMPT["unable"] ]
@@ -257,12 +226,54 @@ def SERVE(drink):
 
   except FileNotFoundError as e:
     return [ exceptions.PROMPT["unable"] ]
+  
 
+def HRU():
+  try:
+    msg_path = './messages/hru.txt'
+    with open(msg_path, "r") as file:
+      return file.read().split("\n")
+  
+  except FileExistsError as e:
+    return [ exceptions.PROMPT["unable"] ]
+  
 
+# ----- Removed Commands -----
+  
 def SING():
   try:
     msg_path = './messages/sing.txt'
     with open(msg_path, "r") as file:
+      return file.read().split("\n")
+
+  except FileNotFoundError as e:
+    return [ exceptions.PROMPT["unable"] ]
+  
+
+def MAGIC():
+  try:
+    msg_path = './messages/magic.txt'
+    with open(msg_path, "r") as file:
+      return file.read().split("\n")
+
+  except FileNotFoundError as e:
+    return [ exceptions.PROMPT["unable"] ]
+  
+
+def DANCE():
+  try:
+    msg_path = './messages/dance.txt'
+    with open(msg_path, 'r') as file:
+      return file.read().split("\n")
+
+  except FileNotFoundError as e:
+    return [ exceptions.PROMPT["unable"] ]
+  
+
+def SCREAM():
+  try:
+    msg_path = './messages/scream.txt'
+    with open(msg_path, 'r') as file:
       return file.read().split("\n")
 
   except FileNotFoundError as e:

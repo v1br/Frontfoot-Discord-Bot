@@ -17,7 +17,7 @@ from scripts import server
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
 developer = os.environ['DEVELOPER']
-devmode = os.environ['DEVMODE']
+devmode = False
 
 # on_ready event
 @client.event
@@ -51,7 +51,6 @@ async def on_message(message):
 
   # check status
   if devmode:
-    print(author == developer)
     if command in ["status", "changelog"] or author.name == developer: 
       pass
     else:
