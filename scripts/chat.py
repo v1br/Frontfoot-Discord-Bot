@@ -215,93 +215,93 @@ def run(command, user):
     reply = random.choice(responses.GOODBYE())
 
   # cook
-  elif command.startswith("cook"):
+  # elif command.startswith("cook"):
 
-    if command == "cook":
-      reply = "Sure, what do you want me to cook?"
+  #   if command == "cook":
+  #     reply = "Sure, what do you want me to cook?"
 
-    elif command == "cook bacon":
-      reply = random.choice(responses.ORDER("bacon"))
-      reply += " :bacon:"
+  #   elif command == "cook bacon":
+  #     reply = random.choice(responses.ORDER("bacon"))
+  #     reply += " :bacon:"
 
-    elif command == "cook bread":
-      reply = random.choice(responses.ORDER("bread"))
-      reply += " :french_bread:"
+  #   elif command == "cook bread":
+  #     reply = random.choice(responses.ORDER("bread"))
+  #     reply += " :french_bread:"
 
-    elif command == "cook burger":
-      reply = random.choice(responses.ORDER("burger"))
-      reply += " :hamburger:"
+  #   elif command == "cook burger":
+  #     reply = random.choice(responses.ORDER("burger"))
+  #     reply += " :hamburger:"
 
-    elif command == "cook cupcake":
-      reply = random.choice(responses.ORDER("cupcake"))
-      reply += " :cupcake:"
+  #   elif command == "cook cupcake":
+  #     reply = random.choice(responses.ORDER("cupcake"))
+  #     reply += " :cupcake:"
 
-    elif command == "cook cheese":
-      reply = random.choice(responses.ORDER("cheese"))
-      reply += " :cheese:"
+  #   elif command == "cook cheese":
+  #     reply = random.choice(responses.ORDER("cheese"))
+  #     reply += " :cheese:"
 
-    elif command == "cook chicken":
-      reply = random.choice(responses.ORDER("chicken"))
-      reply += " :poultry_leg:"
+  #   elif command == "cook chicken":
+  #     reply = random.choice(responses.ORDER("chicken"))
+  #     reply += " :poultry_leg:"
 
-    elif command == "cook croissant":
-      reply = random.choice(responses.ORDER("croissant"))
-      reply += " :croissant:"
+  #   elif command == "cook croissant":
+  #     reply = random.choice(responses.ORDER("croissant"))
+  #     reply += " :croissant:"
 
-    elif command == "cook custard":
-      reply = random.choice(responses.ORDER('custard'))
-      reply += " :custard:"
+  #   elif command == "cook custard":
+  #     reply = random.choice(responses.ORDER('custard'))
+  #     reply += " :custard:"
 
-    elif command == "cook egg":
-      reply = random.choice(responses.ORDER('egg'))
-      reply += " :cooking:"
+  #   elif command == "cook egg":
+  #     reply = random.choice(responses.ORDER('egg'))
+  #     reply += " :cooking:"
 
-    elif command == "cook fish":
-      reply = random.choice(responses.ORDER("fish"))
-      reply += " :fish:"
+  #   elif command == "cook fish":
+  #     reply = random.choice(responses.ORDER("fish"))
+  #     reply += " :fish:"
 
-    elif command == "cook flatbread":
-      reply = random.choice(responses.ORDER("stuffed flatbread"))
-      reply += " :stuffed_flatbread:"
+  #   elif command == "cook flatbread":
+  #     reply = random.choice(responses.ORDER("stuffed flatbread"))
+  #     reply += " :stuffed_flatbread:"
 
-    elif command == "cook fries":
-      reply = random.choice(responses.ORDER("fries"))
-      reply += " :fries:"
+  #   elif command == "cook fries":
+  #     reply = random.choice(responses.ORDER("fries"))
+  #     reply += " :fries:"
 
-    elif command == "cook hotdog":
-      reply = random.choice(responses.ORDER("hotdog"))
-      reply += " :hotdog:"
+  #   elif command == "cook hotdog":
+  #     reply = random.choice(responses.ORDER("hotdog"))
+  #     reply += " :hotdog:"
 
-    elif command == "cook mooncake":
-      reply = random.choice(responses.ORDER("mooncake"))
-      reply += " :moon_cake:"
+  #   elif command == "cook mooncake":
+  #     reply = random.choice(responses.ORDER("mooncake"))
+  #     reply += " :moon_cake:"
 
-    elif command == "cook pancake":
-      reply = random.choice(responses.ORDER("pancake"))
-      reply += " :pancakes:"
+  #   elif command == "cook pancake":
+  #     reply = random.choice(responses.ORDER("pancake"))
+  #     reply += " :pancakes:"
 
-    elif command == "cook pie":
-      reply = random.choice(responses.ORDER("pie"))
-      reply += " :pie:"
+  #   elif command == "cook pie":
+  #     reply = random.choice(responses.ORDER("pie"))
+  #     reply += " :pie:"
 
-    elif command == "cook pizza":
-      reply = random.choice(responses.ORDER("pizza"))
-      reply += " :pizza:"
+  #   elif command == "cook pizza":
+  #     reply = random.choice(responses.ORDER("pizza"))
+  #     reply += " :pizza:"
 
-    elif command == "cook salad":
-      reply = random.choice(responses.ORDER("salad"))
-      reply += " :salad:"
+  #   elif command == "cook salad":
+  #     reply = random.choice(responses.ORDER("salad"))
+  #     reply += " :salad:"
 
-    elif command == "cook shrimp":
-      reply = random.choice(responses.ORDER("shrimp"))
-      reply += " :fried_shrimp:"
+  #   elif command == "cook shrimp":
+  #     reply = random.choice(responses.ORDER("shrimp"))
+  #     reply += " :fried_shrimp:"
 
-    elif command == "cook stew":
-      reply = random.choice(responses.ORDER("stew"))
-      reply += " :stew:"
+  #   elif command == "cook stew":
+  #     reply = random.choice(responses.ORDER("stew"))
+  #     reply += " :stew:"
 
-    else:
-      return exceptions.PROMPT["missing_recipe"]
+  #   else:
+  #     return exceptions.PROMPT["missing_recipe"]
 
   # explode
   elif command == "explode":
@@ -343,54 +343,54 @@ def run(command, user):
     reply += random.choice(responses.LOVE())
 
   # serve
-  elif command.startswith("serve"):
+  # elif command.startswith("serve"):
 
-    if command == "serve":
-      reply += "Sure, which drink do you want me to serve?"
+  #   if command == "serve":
+  #     reply += "Sure, which drink do you want me to serve?"
 
-    elif command == "serve beer":
-      reply += random.choice(responses.SERVE("beer"))
-      reply += " :beer:"
+  #   elif command == "serve beer":
+  #     reply += random.choice(responses.SERVE("beer"))
+  #     reply += " :beer:"
 
-    elif command == "serve boba" or command == "serve bubble tea":
-      reply += random.choice(responses.SERVE("bubble tea"))
-      reply += " :bubble_tea:"
+  #   elif command == "serve boba" or command == "serve bubble tea":
+  #     reply += random.choice(responses.SERVE("bubble tea"))
+  #     reply += " :bubble_tea:"
 
-    elif command == "serve cocktail":
-      reply += random.choice(responses.SERVE("cocktail"))
-      reply += " :cocktail:"
+  #   elif command == "serve cocktail":
+  #     reply += random.choice(responses.SERVE("cocktail"))
+  #     reply += " :cocktail:"
     
-    elif command == "serve coffee":
-      reply += random.choice(responses.SERVE("coffee"))
-      reply += " :coffee:"
+  #   elif command == "serve coffee":
+  #     reply += random.choice(responses.SERVE("coffee"))
+  #     reply += " :coffee:"
 
-    elif command == "serve juice":
-      fruits = ["orange", "apple", "pineapple", "guava", "raspberry", "cranberry", "mango", "litchi", "pear", "lemon", "mixed fruit", "blueberry"]
-      reply += random.choice(responses.SERVE(random.choice(fruits) + " juice"))
-      reply += " :tropical_drink:"
+  #   elif command == "serve juice":
+  #     fruits = ["orange", "apple", "pineapple", "guava", "raspberry", "cranberry", "mango", "litchi", "pear", "lemon", "mixed fruit", "blueberry"]
+  #     reply += random.choice(responses.SERVE(random.choice(fruits) + " juice"))
+  #     reply += " :tropical_drink:"
 
-    elif command == "serve milk":
-      reply += random.choice(responses.SERVE("milk"))
-      reply += " :milk:"
+  #   elif command == "serve milk":
+  #     reply += random.choice(responses.SERVE("milk"))
+  #     reply += " :milk:"
     
-    elif command == "serve soda":
-      reply += random.choice(responses.SERVE("soda"))
-      reply += " :tumbler_glass:"
+  #   elif command == "serve soda":
+  #     reply += random.choice(responses.SERVE("soda"))
+  #     reply += " :tumbler_glass:"
 
-    elif command == "serve tea":
-      reply += random.choice(responses.SERVE("tea"))
-      reply += " :tea:"
+  #   elif command == "serve tea":
+  #     reply += random.choice(responses.SERVE("tea"))
+  #     reply += " :tea:"
     
-    elif command == "serve water":
-      reply += random.choice(responses.SERVE("water"))
-      reply += " :cup_with_straw:"
+  #   elif command == "serve water":
+  #     reply += random.choice(responses.SERVE("water"))
+  #     reply += " :cup_with_straw:"
 
-    elif command == "serve wine":
-      reply += random.choice(responses.SERVE("wine"))
-      reply += " :wine_glass:"
+  #   elif command == "serve wine":
+  #     reply += random.choice(responses.SERVE("wine"))
+  #     reply += " :wine_glass:"
   
-    else:
-      return exceptions.PROMPT["missing_recipe"]
+  #   else:
+  #     return exceptions.PROMPT["missing_recipe"]
 
   # confusion
   else:

@@ -59,7 +59,7 @@ async def on_message(message):
       return
 
   # show cards
-  if keyword in ["help", "changelog", "menu", "roll", "status", "8ball"]:
+  if keyword in ["help", "changelog", "roll", "status", "8ball"]:
     embed = chat.fetch(command)
     await message.channel.send(embed = embed)
     print(f"\nBot: ff, Channel: {channel.name}\n-> Card:{embed.title}")
