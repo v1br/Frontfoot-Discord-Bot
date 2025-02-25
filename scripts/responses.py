@@ -171,7 +171,7 @@ def ORDER(food):
 def JOKE():
   try:
     msg_path = './messages/joke.txt'
-    with open(msg_path, "r") as file:
+    with open(msg_path, "r", encoding="utf-8") as file:
       return file.read().split("\n")
 
   except FileNotFoundError as e:
